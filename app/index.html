@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mest</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+<body>
+  <h2>Mest Dapp</h2>
+  <h3>Ether Send To: <span id="contractaddress"></span></h3>
+  <h3>Ether Received: <span id="getethr"></span> ETH</h3>
+    <h3>Contributers: <span id="contributor"></span></h3>
+      <h3>TotalSupply: <span id="totalSupply"></span> MEST</h3>
+      <h3>Status: <span id="status"></span> </h3>
+  <h4>Verification</h4>
+  <br><label for="Address">Address:</label><input type="text" id="address" placeholder="Address"></input>
+<br><label for="Address">Status:</label><select id="maxcon">
+<option value='0' id="maximum"></option>
+<option value='1'>Unlimited</option>
+</select>
+  <br><br><button id="send" onclick="App.userVerification()">Add to Whitelist</button>
+  <br>
+
+  <h4>Change WhiteList User MaximumContribution Amount</h4>
+  <br><label for="min">Enter Ether Value</label><input type="text" id="maxicontribut" placeholder="MaximumContribution"></input>
+  <br><br><button id="send" onclick="App.changeWhitelistMaximumContribution()">Update minContribAmount</button>
+
+<br>
+<h4>Change Softcap</h4>
+<br><label for="max">Enter Ether Value</label><input type="text" id="softcap" placeholder="Softcap"></input>
+<br><br><button id="send" onclick="App.changeSoftcap()">Update Softcap</button>
+</body>
+</html>
